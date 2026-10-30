@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   View,
   Text,
@@ -7,7 +7,6 @@ import {
   TouchableOpacity,
   RefreshControl,
 } from 'react-native';
-import { router } from 'expo-router';
 import { FlashList, type ListRenderItem } from '@shopify/flash-list';
 import BottomSheet, { BottomSheetScrollView } from '@gorhom/bottom-sheet';
 import { useJobs } from '@/hooks/useJobs';
